@@ -1,20 +1,22 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import FlashMessage from 'react-native-flash-message';
+// import { StyleSheet, Text, View } from 'react-native';
+
+// Import helpers and navigation
+import RootNavigator from './navigation/RootNavigator';
+import LinkingConfiguration from './navigation/LinkingConfiguration';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <SafeAreaProvider>
+      <NavigationContainer linking={LinkingConfiguration}>
+        <RootNavigator />
+      </NavigationContainer>
       <StatusBar style="auto" />
-    </View>
+      {/* Global FlashMessage component to allow banners to appear */}
+      <FlashMessage position="top" />
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

@@ -1,5 +1,13 @@
 # ROI Mobile Project
 
-The project contains markdown files that provide detailed documentation about the Mobile App. These files are:
+## Student Information
 
-- [01.Get started](/Documents/01.Get%20started.md)
+- Name: `STUDENT_NAME`
+- Student ID: `STUDENT_ID`
+- Email: `STUDENT_EMAIL`
+
+## Project Details
+
+- Project Name: `PROJECT_NAME`
+- Description: `PROJECT_DESCRIPTION`
+- Deadline: `PROJECT_DEADLINE`
