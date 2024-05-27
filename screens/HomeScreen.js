@@ -7,10 +7,10 @@ import { imageIndex } from '../constants/images.js';
 
 // Import styling and components
 import Styles from "../styles/MainStyle.js";
-import { MyButton } from '../components/MyButton';
+import { MyButton } from '../components/MyButton.js';
 // import { MyImage } from '../components/MyImage';
-import { TextH1, TextParagraph } from "../components/StyledText";
-import Box from './../components/Box';
+import { TextH1, TextParagraph } from "../components/StyledText.js";
+import Box from '../components/Box.js';
 
 
 export default function HomeScreen(props) {
